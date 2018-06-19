@@ -5,10 +5,16 @@
     "grunt": "*",
     "grunt-contrib-watch": "*",
     "grunt-contrib-less": "*",
-    "grunt-contrib-compress": "*"
+    "grunt-contrib-compress": "*",
+    "snyk": "^1.83.0"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/thomaswilburn/Caret.git"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
